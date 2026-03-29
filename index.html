@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT Portfolio - Data Analysis & Networking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">💻</span>
+                <span class="logo-text">ICT Portfolio</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Hi, I'm an ICT Professional</h1>
+                <p class="hero-subtitle">Diploma in Information & Communication Technology</p>
+                <p class="hero-description">Specializing in Data Analysis, Networking & AI Tools</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="animated-cube"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a Diploma ICT graduate with a strong foundation in networking, data analysis, and modern AI tools. I'm passionate about transforming data into actionable insights and building efficient network solutions.</p>
+                    <p>My expertise spans across multiple domains including Power BI dashboards, Python scripting, SQL database management, and Excel analytics. I'm also proficient in using cutting-edge AI tools to enhance productivity and creativity.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">8+</div>
+                        <div class="stat-label">Skills Mastered</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Dedication</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <!-- Networking -->
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <span class="skill-icon">🌐</span>
+                        <h3>Networking</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li><span class="skill-badge">Network Configuration</span></li>
+                        <li><span class="skill-badge">TCP/IP Protocols</span></li>
+                        <li><span class="skill-badge">Network Security</span></li>
+                        <li><span class="skill-badge">Routing & Switching</span></li>
+                    </ul>
+                </div>
+
+                <!-- Data Analysis -->
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <span class="skill-icon">📊</span>
+                        <h3>Data Analysis</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li><span class="skill-badge">Power BI</span></li>
+                        <li><span class="skill-badge">Python (Pandas, NumPy)</span></li>
+                        <li><span class="skill-badge">SQL Queries</span></li>
+                        <li><span class="skill-badge">Excel Analytics</span></li>
+                        <li><span class="skill-badge">Tableau</span></li>
+                    </ul>
+                </div>
+
+                <!-- AI & Design Tools -->
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <span class="skill-icon">🤖</span>
+                        <h3>AI & Design Tools</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li><span class="skill-badge">Canva Design</span></li>
+                        <li><span class="skill-badge">ChatGPT</span></li>
+                        <li><span class="skill-badge">Claude</span></li>
+                        <li><span class="skill-badge">Copilot</span></li>
+                        <li><span class="skill-badge">Kimi AI</span></li>
+                    </ul>
+                </div>
+
+                <!-- Presentations -->
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <span class="skill-icon">📈</span>
+                        <h3>Presentations</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li><span class="skill-badge">PowerPoint Design</span></li>
+                        <li><span class="skill-badge">Data Visualization</span></li>
+                        <li><span class="skill-badge">Storytelling</span></li>
+                        <li><span class="skill-badge">Professional Slides</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <img id="modalImage" src="" alt="Project Screenshot" class="modal-image">
+                <div class="modal-details">
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalDescription"></p>
+                    <div id="modalAchievements"></div>
+                    <div id="modalTags"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Data Analysis Projects -->
+                <div class="project-card" onclick="openProjectModal(this)" data-image="images/ecommerce-dashboard.png">
+                    <div class="project-icon">📊</div>
+                    <h3>E-Commerce Sales Dashboard</h3>
+                    <p><strong>Overview:</strong> Developed an interactive Power BI dashboard for an e-commerce platform analyzing monthly sales trends, customer segmentation, and product performance metrics. The dashboard processes 50,000+ transaction records and updates in real-time.</p>
+                    <p><strong>Technologies:</strong> Power BI, SQL Server, Excel</p>
+                    <p><strong>Key Achievements:</strong></p>
+                    <ul class="project-list">
+                        <li>Reduced reporting time by 70%</li>
+                        <li>Identified top 20% revenue-generating products</li>
+                        <li>Enabled data-driven inventory decisions</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">Power BI</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">Data Visualization</span>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openProjectModal(this)" data-image="images/churn-analysis.png">
+                    <div class="project-icon">📉</div>
+                    <h3>Customer Churn Analysis</h3>
+                    <p><strong>Overview:</strong> Built a predictive model using Python (Pandas, NumPy, Scikit-learn) to identify at-risk customers and analyze churn patterns. Analyzed 10,000+ customer records across 6 months.</p>
+                    <p><strong>Technologies:</strong> Python, SQL, Tableau, Excel</p>
+                    <p><strong>Key Achievements:</strong></p>
+                    <ul class="project-list">
+                        <li>Achieved 85% prediction accuracy</li>
+                        <li>Identified 3 key churn factors</li>
+                        <li>Recommended retention strategies saving $50K annually</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Tableau</span>
+                        <span class="tag">Predictive Analytics</span>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openProjectModal(this)" data-image="images/financial-forecast.png">
+                    <div class="project-icon">💰</div>
+                    <h3>Financial Forecasting Report</h3>
+                    <p><strong>Overview:</strong> Created comprehensive financial forecasting models using Excel and Power BI, predicting quarterly revenue and expenses for a mid-size organization with 95% accuracy.</p>
+                    <p><strong>Technologies:</strong> Excel, Power BI, SQL, Python</p>
+                    <p><strong>Key Achievements:</strong></p>
+                    <ul class="project-list">
+                        <li>Developed 12-month forecast model</li>
+                        <li>Identified cost-saving opportunities</li>
+                        <li>Presented insights to executive leadership</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">Excel</span>
+                        <span class="tag">Power BI</span>
+                        <span class="tag">Financial Analysis</span>
+                    </div>
+                </div>
+
+                <!-- Networking Projects -->
+                <div class="project-card" onclick="openProjectModal(this)" data-image="images/network-setup.png">
+                    <div class="project-icon">🌐</div>
+                    <h3>Small Office Network Setup</h3>
+                    <p><strong>Overview:</strong> Designed and implemented a complete network infrastructure for a 50-person office including routers, switches, firewalls, and VPN configuration. Ensured 99.9% uptime and secure data transmission.</p>
+                    <p><strong>Technologies:</strong> Cisco Routers, Network Switches, Firewalls, VPN, TCP/IP</p>
+                    <p><strong>Key Achievements:</strong></p>
+                    <ul class="project-list">
+                        <li>Configured VLAN segmentation for departments</li>
+                        <li>Implemented backup and disaster recovery</li>
+                        <li>Reduced network latency by 40%</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">Networking</span>
+                        <span class="tag">Cisco</span>
+                        <span class="tag">Infrastructure</span>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openProjectModal(this)" data-image="images/network-security.png">
+                    <div class="project-icon">🔒</div>
+                    <h3>Network Security Implementation</h3>
+                    <p><strong>Overview:</strong> Implemented comprehensive security protocols including firewalls, intrusion detection systems, and access control lists. Conducted security audit and vulnerability assessment.</p>
+                    <p><strong>Technologies:</strong> Firewalls, IDS/IPS, ACL, Encryption, SSL/TLS</p>
+                    <p><strong>Key Achievements:</strong></p>
+                    <ul class="project-list">
+                        <li>Zero security breaches post-implementation</li>
+                        <li>Achieved ISO 27001 compliance</li>
+                        <li>Trained 50+ staff on security protocols</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">Security</span>
+                        <span class="tag">Firewalls</span>
+                        <span class="tag">Compliance</span>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openProjectModal(this)" data-image="images/vpn-config.png">
+                    <div class="project-icon">🔐</div>
+                    <h3>VPN & Remote Access Configuration</h3>
+                    <p><strong>Overview:</strong> Set up secure VPN infrastructure enabling 200+ remote employees to access company resources safely. Implemented multi-factor authentication and encrypted tunnels.</p>
+                    <p><strong>Technologies:</strong> VPN, OpenVPN, Multi-Factor Auth, Encryption</p>
+                    <p><strong>Key Achievements:</strong></p>
+                    <ul class="project-list">
+                        <li>Enabled seamless remote work</li>
+                        <li>Maintained 99.8% connection uptime</li>
+                        <li>Zero unauthorized access incidents</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">VPN</span>
+                        <span class="tag">Security</span>
+                        <span class="tag">Remote Access</span>
+                    </div>
+                </div>
+
+                <!-- AI & Automation Projects -->
+                <div class="project-card" onclick="openProjectModal(this)" data-image="images/document-automation.png">
+                    <div class="project-icon">🤖</div>
+                    <h3>Document Automation Workflow</h3>
+                    <p><strong>Overview:</strong> Created an AI-powered document automation system using ChatGPT and Python that generates contracts, proposals, and reports automatically, reducing manual work by 80%.</p>
+                    <p><strong>Technologies:</strong> ChatGPT API, Python, Automation, Document Processing</p>
+                    <p><strong>Key Achievements:</strong></p>
+                    <ul class="project-list">
+                        <li>Automated 500+ documents monthly</li>
+                        <li>Reduced document creation time from 2 hours to 10 minutes</li>
+                        <li>Improved consistency and accuracy</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">ChatGPT</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Automation</span>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openProjectModal(this)" data-image="images/content-generation.png">
+                    <div class="project-icon">📝</div>
+                    <h3>Content Generation & SEO Optimization</h3>
+                    <p><strong>Overview:</strong> Leveraged Claude and ChatGPT to generate SEO-optimized blog content, social media posts, and marketing materials. Increased organic traffic by 150%.</p>
+                    <p><strong>Technologies:</strong> Claude, ChatGPT, Copilot, Content Tools</p>
+                    <p><strong>Key Achievements:</strong></p>
+                    <ul class="project-list">
+                        <li>Generated 100+ optimized articles</li>
+                        <li>Improved search rankings for 50 keywords</li>
+                        <li>Increased organic traffic by 150%</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">Claude</span>
+                        <span class="tag">ChatGPT</span>
+                        <span class="tag">Content Marketing</span>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openProjectModal(this)" data-image="images/data-pipeline.png">
+                    <div class="project-icon">⚙️</div>
+                    <h3>Data Processing Automation Pipeline</h3>
+                    <p><strong>Overview:</strong> Built an end-to-end data processing pipeline using Python that automatically extracts, transforms, and loads data from multiple sources. Processes 1M+ records daily.</p>
+                    <p><strong>Technologies:</strong> Python, SQL, ETL, Pandas, NumPy</p>
+                    <p><strong>Key Achievements:</strong></p>
+                    <ul class="project-list">
+                        <li>Automated 100% of data pipeline</li>
+                        <li>Reduced processing time by 90%</li>
+                        <li>Eliminated manual data entry errors</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">ETL</span>
+                        <span class="tag">Automation</span>
+                    </div>
+                </div>
+
+                <!-- Presentation Projects -->
+                <div class="project-card" onclick="openProjectModal(this)" data-image="images/business-proposal.png">
+                    <div class="project-icon">📊</div>
+                    <h3>Executive Business Proposal</h3>
+                    <p><strong>Overview:</strong> Designed a comprehensive 25-slide business proposal presentation for a corporate expansion project. Included financial projections, market analysis, and implementation roadmap.</p>
+                    <p><strong>Technologies:</strong> PowerPoint, Canva, Excel, Data Visualization</p>
+                    <p><strong>Key Achievements:</strong></p>
+                    <ul class="project-list">
+                        <li>Proposal approved by executive board</li>
+                        <li>Won $2M project contract</li>
+                        <li>Professional design won industry award</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">PowerPoint</span>
+                        <span class="tag">Canva</span>
+                        <span class="tag">Business Proposal</span>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openProjectModal(this)" data-image="images/data-storytelling.png">
+                    <div class="project-icon">📈</div>
+                    <h3>Data Storytelling Presentation</h3>
+                    <p><strong>Overview:</strong> Created an engaging 30-slide presentation transforming complex quarterly analytics into compelling business insights for stakeholders. Used advanced data visualization techniques.</p>
+                    <p><strong>Technologies:</strong> PowerPoint, Tableau, Excel, Infographics</p>
+                    <p><strong>Key Achievements:</strong></p>
+                    <ul class="project-list">
+                        <li>Presented to 100+ stakeholders</li>
+                        <li>Influenced strategic decisions</li>
+                        <li>Increased data literacy across organization</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">PowerPoint</span>
+                        <span class="tag">Tableau</span>
+                        <span class="tag">Data Storytelling</span>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openProjectModal(this)" data-image="images/training-presentation.png">
+                    <div class="project-icon">🎓</div>
+                    <h3>Training & Educational Presentation</h3>
+                    <p><strong>Overview:</strong> Developed a comprehensive 40-slide training presentation on network security and data protection for 200+ employees. Included interactive elements and quizzes.</p>
+                    <p><strong>Technologies:</strong> PowerPoint, Canva, Interactive Design</p>
+                    <p><strong>Key Achievements:</strong></p>
+                    <ul class="project-list">
+                        <li>Trained 200+ employees successfully</li>
+                        <li>Achieved 95% knowledge retention</li>
+                        <li>Reduced security incidents by 60%</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">PowerPoint</span>
+                        <span class="tag">Training</span>
+                        <span class="tag">Education</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p>I'm always interested in hearing about new projects and opportunities. Feel free to reach out!</p>
+                <div class="contact-links">
+                    <a href="mailto:your.email@example.com" class="contact-btn">
+                        <span class="contact-icon">✉️</span>
+                        <span>Email Me</span>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="contact-btn">
+                        <span class="contact-icon">💼</span>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com" target="_blank" class="contact-btn">
+                        <span class="contact-icon">🐙</span>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 ICT Portfolio. All rights reserved. | Diploma in Information & Communication Technology</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
