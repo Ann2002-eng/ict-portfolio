@@ -588,6 +588,14 @@ body {
     .modal-body {
         grid-template-columns: 1fr;
     }
+
+    .modal-body > img {
+        order: 1;
+    }
+
+    .modal-details {
+        order: 2;
+    }
 }
 
 @media (max-width: 768px) {
@@ -718,6 +726,14 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     padding: 2rem;
+}
+
+.modal-body > img {
+    order: 2;
+}
+
+.modal-details {
+    order: 1;
 }
 
 .modal-image {
